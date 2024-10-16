@@ -2,12 +2,16 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import Todo from "./Todo";
 
 function App() {
   return (
     <>
       <h1>Vite + React</h1>
-      <Device name="Laptop" price="55" />
+      <Todo task="Learn React" isDone={true} />
+      <Todo task="Explore Core Concepts" isDone={false} />
+      <Todo task="Try JSX" isDone={true} />
+      {/* <Device name="Laptop" price="55" />
       <Device name="Mobile" price="32" />
       <Device name="Tablet" price="98" />
       <Person />
@@ -15,7 +19,7 @@ function App() {
       <Student grade="8" score="44" />
       <Student grade={12} score="33" />
       <Student />
-      <Developer />
+      <Developer /> */}
     </>
   );
 }
